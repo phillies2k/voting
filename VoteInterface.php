@@ -16,31 +16,22 @@ namespace P2\Voting;
 interface VoteInterface
 {
     /**
-     * @var string
-     */
-    const VOTE_DOWN = 3;
-
-    /**
-     * @var string
-     */
-    const VOTE_UP = 5;
-
-    /**
+     * Returns the voter for this vote.
+     *
      * @return VoterInterface
      */
     public function getVoter();
 
     /**
+     * Returns the voteable for this vote.
+     *
      * @return VoteableInterface
      */
     public function getVoteable();
 
     /**
-     * @return string
-     */
-    public function getType();
-
-    /**
+     * Returns the value of this vote.
+     *
      * @return float
      */
     public function getValue();

@@ -15,6 +15,12 @@ namespace P2\Voting;
  */
 interface VoteAlgorithmInterface 
 {
-
+    /**
+     * Returns the calculated vote value for the given vote.
+     *
+     * @param VoteInterface $vote
+     *
+     * @return float
+     */
     public function calculateValue(VoteInterface $vote);
 }
