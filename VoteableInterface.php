@@ -39,4 +39,11 @@ interface VoteableInterface
      * @return VoteableInterface
      */
     public function pushVoter(VoterInterface $voter);
+
+    /**
+     * Returns an unique identifier for this voteable
+     *
+     * @return string
+     */
+    public function __toString();
 }
